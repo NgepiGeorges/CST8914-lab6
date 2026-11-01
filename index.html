@@ -1,6 +1,6 @@
-<html class="js backgroundsize borderimage csstransitions fontface svg" dir="ltr">
+<html lang="en" class="js backgroundsize borderimage csstransitions fontface svg" dir="ltr">
 <head>
-	<title>GEORGES REAL ESTATE </title>
+	<title>Hi/Max Real Estate</title>
 	<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/i18n/en.min.js"></script>
 	<script
 		src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/deps/jsonpointer.min.js"></script>
@@ -27,8 +27,8 @@
 
 <body>
 
-	</div>
-	<div> <!-- start of header-->
+	<!-- </div>  ,deleted because has o closing tag-->
+	<header> <!-- start of header, changed div to header so the screen reader recognizes it as tag-->
 
 				<div class="app-bar">
 			<div class="container">
@@ -42,11 +42,11 @@
 		</div>
 
 
-		<div id="wb-sm" data-ajax-replace="../ajax/cdtsMenu-en.html" data-trgt="mb-pnl"
+		<nav  id="wb-sm" aria-labelledby="topicsMenu" data-ajax-replace="../ajax/cdtsMenu-en.html" data-trgt="mb-pnl"
 			class="wb-menu visible-md visible-lg wb-init wb-data-ajax-replace-inited wb-menu-inited wb-navcurr-inited"
 			typeof="SiteNavigationElement">
 			<div class="pnl-strt container nvbar">
-				<h2>Topics menu</h2>
+				<h2 id="topicsMenu">Topics menu</h2>
 				<div class="row">
 					<ul role="menubar" class="list-inline menu">
 						<li><a class="item" href="index-en.html" tabindex="0" aria-posinset="1" aria-setsize="7"
@@ -64,9 +64,9 @@
 			</div>
 
 
-		</div> <!-- end of main navigation-->
+		</nav> <!-- end of main navigation-->
 
-	</div> <!-- end of header-->
+	</header> <!-- end of header, changed div to end header-->
 
 	<main property="mainContentOfPage" class="container">
 		<h1>Welcome</h1>
